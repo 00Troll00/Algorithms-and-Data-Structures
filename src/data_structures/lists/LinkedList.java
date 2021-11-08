@@ -86,7 +86,7 @@ public class LinkedList<T> {
       Element<T> pointer = head;
       //searching for the Element
       while(pointer != null && pointer.getData().hashCode() != searchData.hashCode()){
-        pointer.getNext();
+        pointer = pointer.getNext();
       }
       if(pointer == null)
         throw new ElementNotFoundException();
