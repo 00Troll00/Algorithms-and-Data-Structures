@@ -183,6 +183,8 @@ public class LinkedList<T> {
     previousPointer.setNext(pointer.getNext());
     data = pointer.getData();
     pointer = null;
+    // decreases the size of the list
+    size--;
 
     return data;
   }//end remove
