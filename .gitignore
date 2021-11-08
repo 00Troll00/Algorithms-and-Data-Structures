@@ -24,3 +24,6 @@ hs_err_pid*
 
 # batch script
 *.cmd
+
+# bit code directory
+/bin

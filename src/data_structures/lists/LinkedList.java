@@ -20,7 +20,7 @@ public class LinkedList<T> {
 
     Element(T data, Element<T> next){
       this.data = data;
-      this.next = null;
+      this.next = next;
     }
 
     public T getData(){
@@ -56,7 +56,7 @@ public class LinkedList<T> {
   public void addFirst(T data){
     Element<T> temp = new Element<>(data, head);
     if(head == null)
-      tail = head;
+      tail = temp;
     head = temp;
     size++;
   }//end addFirst
@@ -210,7 +210,7 @@ public class LinkedList<T> {
   public String toString(){
     String list = "";
     for(Element<T> pointer = head; pointer != null; pointer=pointer.getNext()){
-      list += pointer.toString() + " ";
+      list += pointer.getData().toString() + " ";
     }
     return list;
   }//end toString
