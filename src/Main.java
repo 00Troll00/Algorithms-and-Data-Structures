@@ -4,6 +4,8 @@ import src.data_structures.lists.LinkedList;
 
 public class Main {
   public static void main(String[] args) throws Exception{
+    
+    /*
     LinkedList<String> list = new LinkedList<>();
 
     list.addFirst("Carro");
@@ -19,12 +21,12 @@ public class Main {
 
     System.out.println(list.toString() + "| Tamanho: " + list.size());
 
-    list.addAfter("Torre", "Neymar");
+    list.addAfter("Neymar", "Torre");
     System.out.println(list.toString() + "| Tamanho: " + list.size());
 
-    list.addBefore("kkkk", "Neymar");
+    list.addBefore("Neymar", "kkkk");
     System.out.println(list.toString() + "| Tamanho: " + list.size());
-
+    */
     /*
     for(int i=0; i<10; i++){
       list.addLast(i);

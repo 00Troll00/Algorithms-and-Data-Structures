@@ -1,6 +1,6 @@
 package src.exceptions;
 
-public class EmptyListException extends Exception{
+public class EmptyListException extends RuntimeException{
   public EmptyListException(){
     super();
   }
